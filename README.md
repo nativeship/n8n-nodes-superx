@@ -1,0 +1,351 @@
+# SuperX n8n community node
+
+SuperX helps creators grow on X with post scheduling, analytics, audience insights, and content tools
+
+Generated from OpenAPI 1.0.0 with template 1.1.0. Generated files are platform-managed and will be overwritten during regeneration.
+
+## Authentication
+
+Configure the generated bearer token credential in n8n before using the node.
+
+## Supported operations
+
+- `GET /v1/posts/analytics` - Get analytics
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/articles` - Create an article draft
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/articles/{id}` - Delete an article
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/articles/{id}/cover` - Generate an AI cover image
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/articles/{id}` - Get an article
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/articles` - List articles
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/cover-styles` - List saved cover styles
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/articles/{id}/publish` - Publish an article to X now
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/articles/{id}/schedule` - Schedule or reschedule an article
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/articles/{id}/unschedule` - Unschedule an article
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/articles/{id}` - Edit an article
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/contacts/{id}/notes` - Add a note to a contact
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/contacts/{id}/notes/{noteId}` - Delete a note on a contact
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/audience/{kind}` - Read an audience list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/contacts/{id}` - Get one contact
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/contacts/{id}/notes` - List notes on a contact
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/contacts/{id}/replies` - List one contact's replies to you
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/contacts` - List engaged contacts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/replies/received` - List replies you received
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/contacts/{id}/notes/{noteId}` - Edit a note on a contact
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/contact-lists/{id}/members` - Add a contact list member
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/contact-lists/{id}/members/bulk` - Add contact list members in bulk
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/contact-lists` - Create a contact list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/contact-lists/{id}` - Delete a contact list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/contact-lists/{id}/members` - List contact list members
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/contact-lists` - List contact lists
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/contact-lists/{id}/members/{memberId}` - Remove a contact list member
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/contact-lists/{id}/members/bulk-delete` - Remove contact list members in bulk
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/contact-lists/{id}` - Rename a contact list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/posts` - List published posts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/replies` - List replies you sent
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/context/products/{id}` - Remove one product
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/context` - Get context settings
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/context/style-guide/regenerate` - Rebuild the generated style guide
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/context/products/{id}/scrape` - Refresh a product from its page
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PUT /v1/context/products` - Replace the product list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/context` - Update context settings
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/context/products/{id}` - Add or edit one product
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/datasets/{id}/contacts` - Add a dataset's people to a contact list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/datasets` - Collect an audience into a dataset
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/datasets/{id}/outreach-drafts` - Draft outreach messages onto a research dataset
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/datasets/{id}/export` - Export a dataset as CSV
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/datasets/{id}` - Get a dataset
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/datasets/{id}/rows` - Get dataset rows
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/datasets` - List datasets
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/datasets/{id}/refine` - Refine a dataset by what each person wrote
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/dm/campaigns/{id}` - Cancel a campaign's unsent messages
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/dm/campaigns/{id}` - Read one DM campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/dm/limits` - DM allowances and usage
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/dm/queue` - List the DM queue
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/dm/campaigns` - Queue a DM campaign
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/engage/feeds` - Create an Engage feed
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/engage/feeds/{id}` - Delete an Engage feed
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/engage/reply-draft` - Draft one reply to a post
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/engage/feeds/{id}/posts` - Get posts from an Engage feed
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/engage/mentions` - Get mentions of the account
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/engage/feeds` - List Engage feeds
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/engage/feeds/{id}` - Update an Engage feed
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/me` - Get the key owner
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/accounts` - List your accounts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/inspiration` - Search the inspiration library
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/inspiration/media` - Search the inspiration media index
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/media` - Presign an image upload
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/docs` - Machine-readable quickstart
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/queue-settings` - Get queue settings
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/queue-settings` - Update queue settings
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/scheduled-posts/bulk/delete` - Delete queued posts in bulk
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/scheduled-posts/bulk/auto-retweet` - Enable auto retweet on queued posts in bulk
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/scheduled-posts/bulk/retime` - Retime queued posts in bulk
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/scheduled-posts` - Create a draft or scheduled post, or publish now
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/scheduled-posts/{id}` - Delete a draft or scheduled post
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/posts/draft` - Write post drafts in your voice
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/plug-templates` - List plug templates
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/scheduled-posts` - List drafts and scheduled posts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/posts/remix` - Rewrite a post in your voice
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/scheduled-posts/{id}` - Edit a draft or scheduled post
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/agents/{id}/signals` - Add a signal to an agent
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/agents` - Create a signal agent
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/signals/agents/{id}` - Delete a signal agent
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/icp/expand` - Expand an audience description into a rubric
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/icp/expand-from-url` - Build an audience profile from a website
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/signals/agents` - List signal agents
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/signals/leads` - List signal leads
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/signals/agents/{id}/signals/{signalId}` - Remove a signal from an agent
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/leads/search` - Search for leads on X now
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/leads/{id}/feedback` - Set feedback on a lead
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/signals/keywords/suggest` - Suggest keyword watches
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/signals/agents/{id}` - Update a signal agent
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tags` - Create a tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/tags/{id}` - Delete a tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/tags` - List tags
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/tags/{id}` - Rename or recolor a tag
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tools/factcheck` - Check a statement against a web search
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tools/inline-edit` - Edit one selected piece of a post
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/posts/triage` - Sort recent posts on topic Read, Pass or Not sure
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/posts/viral-score` - Score a draft against this account's own posts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tools/rephrase` - Rewrite a post one preset way
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/workers/suggestions/{id}/dismiss` - Dismiss a suggestion
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/workers/suggestions/{id}/draft` - Save a suggestion as a draft
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/workers/suggestions` - List Worker suggestions
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/workers` - List Workers
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/workers/suggestions/{id}/schedule` - Schedule a suggestion
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/x/posts/{id}/replies` - Top replies to a public post
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/x/users/{handle}/posts` - Latest posts of a public account
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/x/posts/{id}` - Look up one public post live
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/x/users/{handle}` - Look up one public profile live
+  - Retry Contract: none
+  - Pagination Contract: none
+
+## Usage
+
+1. Install this community-node package in n8n.
+2. Add the **SuperX** node to a workflow.
+3. Select a resource and operation, configure its parameters, and execute the workflow.
+
+## Example workflow
+
+Connect **Manual Trigger** -> **SuperX** -> a destination node, select an operation, then run the workflow and inspect the returned items.
+
+## Development
+
+```sh
+npm install
+npm run build
+npm run lint
+npm run dev
+```
+
+`npm run dev` starts a local n8n development instance. Find the integration by its **SuperX** display name.
